@@ -5,6 +5,8 @@
     <file>accountdialog.css</file>
     <file>appchooserdialog.ui</file>
     <file>appchooserrow.ui</file>
+    <file>credentialdialog.ui</file>
+    <file>credentialstatuspage.ui</file>
     <file>inputcapturedialog.ui</file>
     <file>screenshotdialog.ui</file>
     <file>screencastwidget.ui</file>
@@ -26,6 +28,8 @@
 
   <gresource prefix='/org/freedesktop/portal/desktop/gnome'>
     <file alias="icons/scalable/emblems/info-outline-symbolic.svg">icons/info-outline-symbolic.svg</file>
+    <file alias="icons/scalable/devices/credential-touch-symbolic.svg">icons/credential-touch-symbolic.svg</file>
+    <file alias="icons/scalable/devices/credential-security-key-symbolic.svg">icons/credential-security-key-symbolic.svg</file>
   </gresource>
 </gresources>
 

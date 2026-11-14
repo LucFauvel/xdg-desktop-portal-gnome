@@ -86,7 +86,7 @@ repo-sanity:
 
 .container-common:
   variables:
-    FDO_DISTRIBUTION_TAG: '2026-05-20.1'
+    FDO_DISTRIBUTION_TAG: '2026-11-14.1'
 
 .fedora-container:
   extends:
@@ -117,6 +117,7 @@ repo-sanity:
       python3-pytest-xdist
       python3-dbusmock
       python3-dbus
+      qrencode-devel
       sassc
       systemd-devel
       umockdev-devel
@@ -157,6 +158,7 @@ repo-sanity:
       gstreamer1.0-plugins-good
       libgstreamer-plugins-good1.0-dev
       libpipewire-0.3-dev
+      libqrencode-dev
       libudev-dev
       libumockdev-dev
       libseccomp-dev

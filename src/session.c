@@ -45,6 +45,9 @@ G_DEFINE_TYPE_WITH_CODE (Session, session, XDP_IMPL_TYPE_SESSION_SKELETON,
 Session *
 lookup_session (const char *id)
 {
+  if (!sessions)
+    return NULL;
+
   return g_hash_table_lookup (sessions, id);
 }
 

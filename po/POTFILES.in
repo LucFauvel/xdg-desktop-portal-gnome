@@ -6,6 +6,9 @@ src/accountdialog.ui
 src/appchooserdialog.c
 src/appchooserdialog.ui
 src/background.c
+src/credential.c
+src/credentialdialog.c
+src/credentialdialog.ui
 src/dynamic-launcher.c
 src/filechooser.c
 src/globalshortcuts.c

@@ -1,7 +1,7 @@
 gnome = import('gnome')
 pkg = import('pkgconfig')
 
-xdg_desktop_portal_dep = dependency('xdg-desktop-portal', version: '>= 1.21.1')
+xdg_desktop_portal_dep = dependency('xdg-desktop-portal', version: '>= 23.0')
 
 # Desktop Portal D-Bus interfaces
 desktop_portal_dbus_interfaces = gnome_portal_interfaces + [
@@ -88,6 +88,7 @@ deps = [
   dependency('gnome-desktop-4'),
   dependency('gnome-bg-4'),
   dependency('libgxdp'),
+  dependency('libqrencode'),
   libadwaita_dep,
   xdg_desktop_portal_dep,
 ]
@@ -101,6 +102,9 @@ sources = built_sources + files(
   'appchooserdialog.c',
   'background.c',
   'clipboard.c',
+  'credential.c',
+  'credentialdialog.c',
+  'credentialstatuspage.c',
   'displaystatetracker.c',
   'dynamic-launcher.c',
   'fc-monitor.c',
@@ -113,6 +117,7 @@ sources = built_sources + files(
   'lockdown.c',
   'notification.c',
   'print.c',
+  'qrcodepaintable.c',
   'remotedesktop.c',
   'remotedesktopdialog.c',
   'request.c',

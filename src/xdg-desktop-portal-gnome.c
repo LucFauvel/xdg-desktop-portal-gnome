@@ -49,6 +49,7 @@
 #include "appchooser.h"
 #include "background.h"
 #include "clipboard.h"
+#include "credential.h"
 #include "filechooser.h"
 #include "globalshortcuts.h"
 #include "lockdown.h"
@@ -214,6 +215,12 @@ on_bus_acquired (GDBusConnection *connection,
     }
 
   if (!usb_init (connection, &error))
+    {
+      g_warning ("error: %s\n", error->message);
+      g_clear_error (&error);
+    }
+
+  if (!credential_init (connection, &error))
     {
       g_warning ("error: %s\n", error->message);
       g_clear_error (&error);
